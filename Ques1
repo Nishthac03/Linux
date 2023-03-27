@@ -1,0 +1,16 @@
+//fork system call
+#include <stdio.h>
+#include<unistd.h>
+int main{
+int pid;
+printf("parent process id is %d \n",getpid());
+pid=fork();
+if(pid==0){
+printf("child is created with %d for parent %d \n",getpid(),getppid());
+}
+else if(pid==-1){
+printf("no child is created \n");
+}
+else{
+printf("parent process");
+}}                                                                             >

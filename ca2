@@ -33,15 +33,17 @@ int main()
             }
             write(fd, input, strlen(input));
             write(fd, "\n", 1);
-            i = 0; 
-            else 
+            i = 0;
+         }
+         else
+         {
             i++;
             if (i >= MAX_SIZE) 
             {
-                fprintf(stderr, "Input too long\n");
-                exit(EXIT_FAILURE);
-            }
-        }
+               fprintf(stderr, "Input too long\n");
+               exit(EXIT_FAILURE);
+             }
+         }
     }
 
     // Close file
